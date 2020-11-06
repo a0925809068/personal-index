@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/people.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+    <title>人才招募</title>
+  </head>
+  <body>
+    <header class="header.css">
+      <div class="logo_img">
+        <a href="index.html">
+          <img src="images/LOGO-new-light.png">
+          <h1>J&M kitchen</h1>
+        </a>
+      </div>
+      <button class="hamburger hamburger--squeeze is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="link_list">
+      <ol class="link_list">
+        <li><a href="index_news.html">最新訊息</a></li>
+        <li><a href="index_breakfast.html">早午餐</a></li>
+        <li><a href="index_meal.html">燉飯&麵</a></li>
+        <li><a href="index_location.html">門市據點</a></li>
+        <li><a href="index_people.html"><span>人才招募</span></a></li>
+        <li><a href="index_join us.html">我要加盟</a></li>
+        <li>
+          <div class="social_block">
+            <ul class="social_link_list">
+            <li><a href="#"><img src="images/FB.png"></a></li>
+            <li><a href="#"><img src="images/IG.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </header>
+    <div class="background">
+      <div class="LOGO">
+        <a href="index.html">
+          <img src="images/LOGO-new-light.png">
+        </a>
+      </div>
+      <div class="title">
+        <h1>從此時此刻開始</h1>
+        <span>提供優質工作條件，落實幸福職場環境，攜手共創美好的未來</span>
+      </div>
+      <div class="contain">
+        <div class="aside">
+          <div class="pic">
+            <img src="images/group.png">
+            <h3>福利特色</h3>
+          </div>
+          <ul>
+            <li>每天提供豐盛的午餐</li>
+            <li>優於勞基法的薪資</li>
+            <li>三節獎金</li>
+            <li>專業津貼加給、加班費</li>
+            <li>員工旅遊</li>
+          </ul>
+        </div>
+        <div class="main">
+          <div class="pic">
+            <img src="images/rich-people.png">
+            <h3>升遷發展</h3>
+          </div>
+          <ul>
+            <li>完善透明的升遷管道</li>
+            <li>明確的升遷考核標準</li>
+            <li>定期員工教育訓練</li>
+            <li>專業崗位培訓課程</li>
+            <li>新人迎新茶會</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button">
+        <div class="button_1">
+          <button type="button"><a>104人力銀行</a></button>
+        </div>
+        <div class="button_2">
+          <button type="button"><a>1111人力銀行</a></button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>地址:桃園市中壢區復興路46號</span>
+      <br>
+      <span>電話:03-8888168</span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+          $(this).toggleClass("is-active");
+        });
+      });
+      $(function () {
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+          $("div.link_list").slideToggle();
+        });
+
+      });
+    </script>
+  </body>
+</html>

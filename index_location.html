@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+    <link rel="stylesheet" href="./css/location.css">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <title>門市據點</title>
+  </head>
+  <body>
+    <header class="header.css">
+      <div class="logo_img">
+        <a href="index.html">
+          <img src="images/LOGO-new-light.png">
+          <h1>J&M kitchen</h1>
+        </a>
+      </div>
+      <button class="hamburger hamburger--squeeze is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="link_list">
+      <ol class="link_list">
+        <li><a href="index_news.html">最新訊息</a></li>
+        <li><a href="index_breakfast.html">早午餐</a></li>
+        <li><a href="index_meal.html">燉飯&麵</a></li>
+        <li><a href="index_location.html"><span>門市據點</span></a></li>
+        <li><a href="index_people.html">人才招募</a></li>
+        <li><a href="index_join us.html">我要加盟</a></li>
+        <li>
+          <div class="social_block">
+            <ul class="social_link_list">
+            <li><a href="#"><img src="images/FB.png"></a></li>
+            <li><a href="#"><img src="images/IG.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </header>
+    <div class="rice_background"></div>
+    <div class="contain">
+      <div class="aside">
+        
+      </div>
+      <div class="main">
+        <div class="title_group">
+          <h2>門市據點</h2>
+          <div class="title"></div>
+        </div>
+        <div class="LOGO">
+          <a href="index.html">
+            <img src="images/LOGO-new.png">
+          </a>
+          <span>J&M kitchen</span>
+        </div>
+        <div class="location">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.26029363991!2d121.2239843291193!3d24.95725719642283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468223631e63c13%3A0x38b45444b08fe0ff!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5b6p6IiI6LevNDbomZ8!5e0!3m2!1szh-TW!2stw!4v1601878845698!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="address">
+            <h3>地址</h3>
+            <span>桃園市中壢區復興路46號</span>
+            <hr>
+            <h3>電話</h3>
+            <span>(03)-8888168</span>
+            <hr>
+            <h3>營業時間</h3>
+            <span>周一至周日全天營業11:00－22:00，最後點餐時間：21:00</span>
+            <hr>
+            <h3>停車資訊</h3>
+            <span>附近有收費公七中央地下停車場</span>
+            <hr>
+          </div>
+        </div>
+        <div class="location_pic_group">
+          <div class="location_pic"><img src="images/location-1.jpg"></div>
+          <div class="location_pic"><img src="images/location-2.jpg"></div>
+          <div class="location_pic"><img src="images/location-3.jpg"></div>
+          <div class="location_pic"><img src="images/location-4-2.png"></div>
+          <div class="location_pic"><img src="images/location-5.jpg"></div>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <span>地址:桃園市中壢區復興路46號</span>
+        <br>
+        <span>電話:03-8888168</span>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="/slick-1.8.1/slick/slick.min.js"></script>
+      <script>
+        $(function () {
+          // hamburger icon 的切換
+          $("button.hamburger").on("click", function () {
+            $(this).toggleClass("is-active");
+          });
+        });
+        $(function () {
+          // 點擊按鈕，選單縮放
+          $("button.hamburger").on("click", function () {
+            $("div.link_list").slideToggle();
+          });
+
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.location_pic_group').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              
+              breakpoint: 991,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      });
+      </script>
+  </body>
+</html>

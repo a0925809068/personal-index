@@ -1,0 +1,54 @@
+body{
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
+@media (max-width: 575px){
+  
+}
+@media (min-width: 576px) and (max-width: 767px){
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+  div.background{
+    width: 720px;
+    
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  div.background{
+    width: 960px;
+  }
+}
+@media (min-width: 1200px){
+  div.background{
+    width: 1140px;
+
+  }
+}
+<table>
+          <tr>
+            <td><span class="new">NEW!!</span>秋季新品試吃</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>試營運期間開幕到下午兩點喔</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>開幕兩周部分餐點都有打8折喔</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>我們即將在8月初進行試營運，歡迎蒞臨本店</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>公布菜單</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>社群網站完成!!歡迎加入臉書、IG</td>
+          </tr>
+          <tr>
+            <td><span class="new">NEW!!</span>號外~號外~我們要招募人才摟!!歡迎對烹飪或者對美食有興趣的帥哥、美女加入我們</td>
+          </tr>
+        </table>
+      </div

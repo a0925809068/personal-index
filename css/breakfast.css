@@ -1,0 +1,314 @@
+*{
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+body{
+  margin: 0 auto;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+}
+div.link_list > ol.link_list > li > a span{
+  color: #f29800;
+}
+/* div.breakfast_background{
+  background-image: url("../images/eggs-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  width: 100%;
+  height: 540px;
+} */
+ul,li{ 
+      list-style: none;
+      margin:0; 
+      padding:0; } 
+      /*css reset end*/ /*css public start*/ 
+    .floatfix { 
+      *zoom: 1; } 
+    .floatfix:after { 
+      content: ""; 
+      display: table; 
+      clear: both; } 
+      /*css public end*/ /*slider start*/ 
+    .slider-contaner{ 
+      width:100%; 
+      position:relative; } 
+    .slider-item + .slider-item{ 
+      opacity:0; } 
+    .slider-item{ 
+      width:100%; 
+      /* height: 100vh; */
+      position:absolute; 
+      animation-timing-function: linear; 
+      animation-name:fade; 
+      animation-iteration-count: infinite; 
+      /* background-size:100%; */
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; } 
+    /* .focus-container{ 
+      position:absolute; 
+      z-index:7; 
+      margin:0 auto; 
+      left:0; 
+      right:0; } 
+    .focus-container li{ 
+      width:10px; 
+      height:10px; 
+      border-radius:50%; 
+      float:left; 
+      margin-right:10px; 
+      background:#fff; } 
+    .focus-item{ 
+      width:100%; 
+      height:100%; 
+      border-radius:inherit; 
+      animation-timing-function: linear; 
+      animation-name:fade; 
+      animation-iteration-count: infinite; } 
+    .focus-item2,.focus-item3,.focus-item4,.focus-item5{ 
+      opacity:0; } 
+    .focus-container ul{ 
+      margin-left:46%; } 
+      設置輪播焦點的位置 
+    .focus-container{ 
+      bottom:2%; } 
+      設置當前圖片焦點的顏色 
+    .focus-item{ 
+      background:#d9485c; }  */
+      /*設置動畫，請根據實際需要修改秒數*/ 
+    .slider-item,.focus-item{ 
+      animation-duration: 20s; } 
+    .slider-item1,.focus-item1{ 
+      animation-delay: -1s; } 
+    .slider-item2,.focus-item2{ 
+      animation-delay: 3s; } 
+    .slider-item3,.focus-item3{ 
+      animation-delay: 7s; } 
+    .slider-item4,.focus-item4{
+      animation-delay: 11s; } 
+    .slider-item5,.focus-item5{
+      animation-delay: 15s; } 
+    @keyframes fade{ 
+      0%{ opacity:0; z-index:2; } 
+      5%{ opacity:1; z-index: 1; } 
+      20%{ opacity:1; z-index:1; } 
+      25%{ opacity:0; z-index:0; } 
+      100%{ opacity:0; z-index:0; } } 
+      /*設置背景，響應式請利用媒體查詢根據斷點修改路徑*/ 
+    .slider-item1{ 
+      background-image:url(/images/eggs.jpg); } 
+    .slider-item2{ 
+      background-image:url(/images/breakfast-1.jpeg); } 
+    .slider-item3{ 
+      background-image:url(/images/breakfast-2.jpeg); } 
+    .slider-item4{ 
+      background-image:url(/images/breakfast-3.jpeg); } 
+    .slider-item5{ 
+      background-image:url(/images/breakfast-4.webp); } 
+      /*設置圖片的高度，請根據具體需要修改百分比，響應式及時修改此值*/ 
+    .slider,.slider-item{ 
+      padding-bottom: 35%;
+      transition: all 1s;
+     }
+@media (max-width: 575px){
+  .slider,.slider-item{ 
+    padding-bottom: 90%; 
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .slider,.slider-item{ 
+    padding-bottom: 65%; 
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .slider,.slider-item{ 
+    padding-bottom: 50%; 
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .slider,.slider-item{ 
+    padding-bottom: 45%; 
+  }
+}
+div.contain{
+  /* border: 1px solid white; */
+  background-image: url("../images/trees.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  width: 100%;
+}
+div.main{
+  /* border: 1px solid red; */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+@media (max-width: 1199px){
+    div.main{
+    width: 90%;
+  }
+}
+div.breakfast_title{
+  /* border: 1px solid red; */
+  padding-top: 50px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.breakfast_title{
+    padding-top: 30px;
+  }
+}
+div.breakfast_title > h2{
+  margin-left: 25px;
+  position: relative;
+  transition: all 1s;
+  z-index: 2;
+}
+@media (max-width: 767px){
+  div.breakfast_title > h2{
+  margin-left: 0px;
+  text-align: center; 
+  font-size: 30px;
+  top: 10px;
+  left: 0;
+  }
+}
+div.breakfast{
+  width: 137px;
+  height: 24px;
+  background-color: #f29800;
+  position: relative;
+  bottom: 35px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.breakfast{
+  width: 100%;
+  }
+}
+div.word{
+  text-align: center;
+  padding-bottom: 30px;
+  /* border: 1px solid red */
+}
+div.word > h2{
+  color: #d9485c;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.word > h2{
+  font-size: 22px;
+  }
+}
+div.word > span{
+  font-weight: bold;
+  line-height: 1.5;
+}
+div.product_pic{
+  /* border: 1px solid green; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #a0a0a0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 767px){
+  div.product_pic{
+    margin: 50px 5px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.product_pic{
+    margin: 30px 5px 0;
+  }
+}
+div.product_pic:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 767px){
+  div.product_pic:hover{
+  transform: none;
+}
+}
+div.product_pic > a{
+  text-decoration: none;
+  display: inline-block;
+}
+div.food_list_1,.food_list_2,.food_list_3{
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_1,.food_list_2{
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_list_1,.food_list_2{
+    margin-bottom: 0px;
+  }
+}
+div.food{
+  /* border: 1px solid white; */
+  width: 300px;
+  /* height: 350px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+div.food > img{
+  width: 100%;
+}
+div.food_name{
+  border: 1px solid white;
+  height: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsla(0deg, 0%, 100%, 0.9);
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+}
+div.food_name_detial{
+  border: 1px solid green;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  height: 50px;
+  font-size: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 1s;
+}
+div.product_pic:hover div.food_name_detial{
+  transform: translateY(0%);
+}
+footer{
+  width: 100%;
+  background-color: #834e00;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}

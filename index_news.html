@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+    <title>最新訊息</title>
+  </head>
+  <body>
+    <header class="header.css">
+      <div class="logo_img">
+        <a href="index.html">
+          <img src="images/LOGO-new-light.png">
+          <h1>J&M kitchen</h1>
+        </a>
+      </div>
+      <button class="hamburger hamburger--squeeze is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="link_list">
+      <ol class="link_list">
+        <li><a href="index_news.html"><span>最新訊息</span></a></li>
+        <li><a href="index_breakfast.html">早午餐</a></li>
+        <li><a href="index_meal.html">燉飯&麵</a></li>
+        <li><a href="index_location.html">門市據點</a></li>
+        <li><a href="index_people.html">人才招募</a></li>
+        <li><a href="index_join us.html">我要加盟</a></li>
+        <li>
+          <div class="social_block">
+            <ul class="social_link_list">
+            <li><a href="#"><img src="images/FB.png"></a></li>
+            <li><a href="#"><img src="images/IG.png"></a></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </header>
+    <div class="contain">
+      <div class="main">
+        <div class="LOGO">
+          <a href="index.html">
+          <img src="images/LOGO-new2.png">
+          </a>
+        </div>
+        <div class="video">
+          <video autoplay loop muted>
+            <source src="/images/富錦樹咖啡店 Fujin Tree Café 形象篇.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="news_title">
+          <h2>最新訊息</h2>
+          <div class="news"></div>
+        </div>
+        <div class="select">
+          <span>Archive</span>
+          <select name="month">
+            <option value="1"selected>請選擇月份</option>
+            <option value="2">2020年8月</option>
+            <option value="3">2020年9月</option>
+            <option value="3">2020年10月</option>
+          </select>
+        </div>
+        <div class="news_group">
+          <div class="news_list">
+            <h3><span class="new">NEW!! </span>秋季新品試吃</h3>
+            <hr>
+            <div class="pic"><img src="/images/new-menu.jpg"></div>
+          </div>
+          <div class="news_list">
+            <h3><span class="new">NEW!! </span>試營運期間開幕到下午兩點</h3>
+            <hr>
+            <div><span class="new">NEW!!</span>試營運期間，由原本由原本下午一點延長至下午兩點!!</div>
+          </div>
+          <div class="news_list">
+            <h3><span class="new">NEW!! </span>開幕兩周餐點都有打8折</h3>
+            <hr>
+            <div><span class="new">NEW!!</span>每日限定部分餐點一率八折!!天天都不一樣，滿足你想嘗鮮的心情</div>
+          </div>
+          <div class="news_list">
+            <h3><span class="new">NEW!! </span>我們即將在8月初進行試營運，歡迎蒞臨本店</h3>
+            <hr>
+            <div class="pic"><img src="/images/location-3.jpg"></div>
+          </div>
+          <div class="news_list">
+            <h3><span class="new">NEW!! </span>號外~號外~我們要招募人才摟!!歡迎對烹飪或者對美食有興趣的帥哥、美女加入我們</h3>
+            <hr>
+            <div class="pic"><img src="/images/store.jpg"></div>
+          </div>
+        </div>
+        <div class="pagination_block">
+          <ul class="pagination">
+            <li><a href="#">&lt;</a></li>
+            <li><a href="#" class="-on">1</a></li>
+            <li><a href="#" >2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">&gt;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>地址:桃園市中壢區復興路46號</span>
+      <br>
+      <span>電話:03-8888168</span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function () {
+          $(this).toggleClass("is-active");
+        });
+      });
+      $(function () {
+        // 點擊按鈕，選單縮放
+        $("button.hamburger").on("click", function () {
+          $("div.link_list").slideToggle();
+        });
+
+      });
+    </script>
+  </body>
+</html>

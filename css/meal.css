@@ -1,0 +1,427 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+}
+div.link_list > ol.link_list > li > a span{
+  color: #f29800;
+}
+ul,li{ 
+      list-style: none;
+      margin:0; 
+      padding:0; } 
+      /*css reset end*/ /*css public start*/ 
+    .floatfix { 
+      *zoom: 1; } 
+    .floatfix:after { 
+      content: ""; 
+      display: table; 
+      clear: both; } 
+      /*css public end*/ /*slider start*/ 
+    .slider-contaner{ 
+      width:100%; 
+      position:relative; } 
+    .slider-item + .slider-item{ 
+      opacity:0; } 
+    .slider-item{ 
+      width:100%; 
+      /* height: 100vh; */
+      position:absolute; 
+      animation-timing-function: linear; 
+      animation-name:fade; 
+      animation-iteration-count: infinite; 
+      /* background-size:100%; */
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; } 
+    /* .focus-container{ 
+      position:absolute; 
+      z-index:7; 
+      margin:0 auto; 
+      left:0; 
+      right:0; } 
+    .focus-container li{ 
+      width:10px; 
+      height:10px; 
+      border-radius:50%; 
+      float:left; 
+      margin-right:10px; 
+      background:#fff; } 
+    .focus-item{ 
+      width:100%; 
+      height:100%; 
+      border-radius:inherit; 
+      animation-timing-function: linear; 
+      animation-name:fade; 
+      animation-iteration-count: infinite; } 
+    .focus-item2,.focus-item3,.focus-item4,.focus-item5{ 
+      opacity:0; } 
+    .focus-container ul{ 
+      margin-left:46%; } 
+      設置輪播焦點的位置 
+    .focus-container{ 
+      bottom:2%; } 
+      設置當前圖片焦點的顏色 
+    .focus-item{ 
+      background:#d9485c; }  */
+      /*設置動畫，請根據實際需要修改秒數*/ 
+    .slider-item,.focus-item{ 
+      animation-duration: 20s; } 
+    .slider-item1,.focus-item1{ 
+      animation-delay: -1s; } 
+    .slider-item2,.focus-item2{ 
+      animation-delay: 3s; } 
+    .slider-item3,.focus-item3{ 
+      animation-delay: 7s; } 
+    .slider-item4,.focus-item4{
+      animation-delay: 11s; } 
+    .slider-item5,.focus-item5{
+      animation-delay: 15s; } 
+    @keyframes fade{ 
+      0%{ opacity:0; z-index:2; } 
+      5%{ opacity:1; z-index: 1; } 
+      20%{ opacity:1; z-index:1; } 
+      25%{ opacity:0; z-index:0; } 
+      100%{ opacity:0; z-index:0; } } 
+      /*設置背景，響應式請利用媒體查詢根據斷點修改路徑*/ 
+    .slider-item1{ 
+      background-image:url(/images/meal-1.jpg); } 
+    .slider-item2{ 
+      background-image:url(/images/meal-2.jpg); } 
+    .slider-item3{ 
+      background-image:url(/images/meal-3.jpg); } 
+    .slider-item4{ 
+      background-image:url(/images/shrimp.jpg); } 
+    .slider-item5{ 
+      background-image:url(/images/20200410183936_51.jpg); } 
+      /*設置圖片的高度，請根據具體需要修改百分比，響應式及時修改此值*/ 
+    .slider,.slider-item{ 
+      padding-bottom: 35%;
+      transition: all 1s;
+     }
+@media (max-width: 575px){
+  .slider,.slider-item{ 
+    padding-bottom: 90%; 
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .slider,.slider-item{ 
+    padding-bottom: 65%; 
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .slider,.slider-item{ 
+    padding-bottom: 50%; 
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .slider,.slider-item{ 
+    padding-bottom: 45%; 
+  }
+}
+/* div.rice_background{
+  background-image: url("../images/shrimp-2.png");
+  background-repeat: no-repeat;
+  background-size: 1900px 700px;
+  border: 1px solid black;
+  width: 100%;
+  height: 540px;
+} */
+div.contain{
+  /* border: 1px solid white; */
+  background-image: url("../images/trees.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  /* background-color: #4b2a06; */
+  width: 100%;
+}
+div.main{
+  /* border: 1px solid red; */
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 1s;
+}
+@media (max-width: 1199px){
+    div.main{
+    width: 90%;
+  }
+}
+div.meal_title{
+  /* border: 1px solid red; */
+  padding-top: 50px;
+}
+div.meal_title > h2{
+  position: relative;
+  left: 25px;
+  z-index: 2;
+}
+@media (max-width: 767px){
+  div.meal_title > h2{
+    margin-left: 0px;
+    text-align: center; 
+    font-size: 30px;
+    top: 10px;
+    left: 0;
+  }
+}
+div.meal{
+  /* border: 1px solid white; */
+  width: 200px;
+  height: 24px;
+  background-color: #f29800;
+  position: relative;
+  bottom: 35px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.meal{ 
+    width: 100%;
+  }
+}
+div.word{
+  text-align: center;
+  transition: all 1s;
+}
+div.word > h2{
+  color: #d9485c;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.word > h2{ 
+    font-size: 22px;
+  }
+}
+div.word > span{
+  font-weight: bold;
+  line-height: 1.5;
+}
+div.food_list_1{
+  margin-top: 20px;
+  position: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_1,div.food_list_2,div.food_list_3,div.food_list_4{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_list_1,div.food_list_2,div.food_list_3,div.food_list_4{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+  }
+}
+div.food_list_1 > div.product_pic1{
+  /* border: 1px solid black; */
+  width: 300px;
+  position: relative;
+  top:80px;
+  right: 50px;
+  float: right;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_1 > div.product_pic1{
+    top:0;
+    right: 0;
+    float: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_list_1 > div.product_pic1{
+    right: 0;
+  }
+}
+div.product_pic,div.product_pic1{
+  display: inline-block;
+}
+@media (max-width: 767px){
+  div.product_pic,div.product_pic1{
+    /* border: 1px solid green; */
+    margin-top: 20px;
+  }
+}
+div.food_list_3 > div.product_pic1{
+  /* border: 1px solid black; */
+  float: right;
+  position: relative;
+  top:80px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_3 > div.product_pic1{
+    float: none;
+    position: relative;
+    top:0;
+  }
+}
+div.food{
+  /* border: solid #834e00; */
+  border: solid white;
+  border-width: 8px 15px 30px 15px;
+  border-radius: 50%;
+  font-size: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+div.food > img{
+  transform: scale(1);
+  transition-duration: 1s;
+}
+div.food > img:hover{
+  transform: scale(1.2);
+}
+div.food_name{
+  /* border: 1px solid black; */
+  font-size: 20px;
+  text-align: center;
+  color: #d9485c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+@media (max-width: 767px){
+  div.food_name{
+    width: 300px
+  }
+}
+div.food_name > div.detial{
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+div.food_list_2{
+  /* border: 1px solid black; */
+  text-align: center;
+}
+div.food_list_2 > div.product_pic{
+  position: relative;
+  right:50px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_2 > div.product_pic{
+    position: relative;
+    right:0;
+  }
+}
+div.food_list_2 > div.product_pic > div.food{
+  width: 400px;
+  height: 400px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_2 > div.product_pic > div.food{
+    width: 300px;
+    height: 300px;
+  }
+}
+div.food_list_2 > div.product_pic > div.food > img{
+  width: 100%;
+}
+div.food_list_3 > div.product_pic{
+  position: relative;
+  bottom: 60px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_3 > div.product_pic{
+    bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_list_3 > div.product_pic{
+    bottom: 30px;
+  }
+}
+div.food_list_3 > div.product_pic1 > div.food{
+  width: 350px;
+  height: 350px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_3 > div.product_pic1 > div.food{
+    width: 300px;
+    height: 300px;
+  }
+}
+div.food_list_3 > div.product_pic1 > div.food > img{
+  width: 100%;
+}
+div.food_list_4 > div.product_pic{
+  position: relative;
+  left:300px;
+  bottom: 30px;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.food_list_4 > div.product_pic{
+    left:0;
+    bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_list_4 > div.product_pic{
+    left:80px;
+  }
+}
+div.button{
+  padding: 20px 60px;
+  /* border: 1px solid red; */
+  display:flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px){
+  div.button{
+    justify-content: center;
+    padding: 40px 0;
+  }
+}
+div.button > a > button{
+  padding: 3px 30px;
+  font-size: 16px;
+  background-color: #d9485c;
+  color: white;
+  outline: none;
+  border-radius: 15px;
+  border-color: gray;
+  margin-right: 30px;
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+@media (max-width: 767px){
+  div.button > a > button{
+    padding: 10px 100px;
+    margin-right: 0px;
+    font-size: 26px;
+  }
+}
+div.button > a > button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@media (max-width: 767px){
+  div.button > a > button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: none;
+  }
+}
+footer{
+  width: 100%;
+  background-color: #834e00;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}

@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+}
+div.link_list > ol.link_list > li > a span{
+  color: #f29800;
+}
+div.background{
+  /* border: 1px solid black; */
+  background-image: url("../images/wood-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div.LOGO{
+  text-align: center;
+  padding-top: 100px;
+}
+div.LOGO > a > img{
+  width: 180px;
+}
+div.title{
+  /* border: 1px solid black; */
+  text-align: center;
+  transition: all 1s;
+}
+@media (max-width: 767px){
+  div.title{
+    padding:0 5% ;
+  }
+}
+div.title > h1{
+  color: #EFBB24;
+}
+div.title > span{
+  color: white;
+  font-size: 25px;
+  text-shadow: 3px 3px 10px black;
+}
+div.contain{
+  /* border: 1px solid white; */
+  max-width: 1520px;
+  margin-top: 70px;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+div.aside,div.main{
+  border: 1px solid white;
+  width: 400px;
+  background-color: gray;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+}
+div.aside > div.pic,div.main > div.pic{
+  display: inline-block;
+  vertical-align: top;
+}
+div.pic > img{
+  width: 100px;
+}
+div.aside > ul,div.main > ul{
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+div.aside > ul > li,div.main > ul > li{
+  padding: 10px;
+}
+h3{
+  text-align: center;
+  color: #EFBB24;
+}
+div.button{
+  text-align: center;
+  padding: 20px 0px;
+  transition: all 1s;
+  /* border: 1px solid red; */
+}
+@media (max-width: 767px){
+  div.button{
+    padding: 20px 0px 50px;
+  }
+}
+div.button_1,div.button_2{
+  display: inline-block;
+  width: 200px;
+}
+div.button_1 > button,div.button_2 > button{
+  padding: 3px 30px;
+  font-size: 16px;
+  background-color: #EFBB24;
+  outline: none;
+  border-radius: 5px;
+  border-color: gray;
+}
+@media (max-width: 767px){
+  div.button_1 > button,div.button_2 > button{
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+div.button_1 > button:hover,div.button_2 > button:hover{
+  background-color: #d9485c;
+  color: white;
+  cursor: pointer;
+}
+footer{
+  width: 100%;
+  background-color: #834e00;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
