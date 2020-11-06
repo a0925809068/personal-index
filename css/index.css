@@ -385,6 +385,7 @@ div.food_name{
 div.map{
   /* border: 1px solid black; */
   width: 100%;
+  overflow: hidden;
 }
 div.map > iframe{
   width: 100%;
