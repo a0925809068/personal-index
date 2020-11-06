@@ -103,7 +103,7 @@ div.news{
   }
 }
 div.select{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 90%;
   margin: 0 auto;
   font-size: 20px;
@@ -113,7 +113,7 @@ div.select{
   /* float: right; */
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
 }
 @media (max-width: 767px){
   div.select{

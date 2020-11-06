@@ -98,15 +98,15 @@ div.background{
       100%{ opacity:0; z-index:0; } } 
       /*設置背景，響應式請利用媒體查詢根據斷點修改路徑*/ 
     .slider-item1{ 
-      background-image:url(/images/background-1-2.png); } 
+      background-image:url(../images/background-1-2.png); } 
     .slider-item2{ 
-      background-image:url(/images/background-1-3.png); } 
+      background-image:url(../images/background-1-3.png); } 
     .slider-item3{ 
-      background-image:url(/images/background-1-4.png); } 
+      background-image:url(../images/background-1-4.png); } 
     .slider-item4{ 
-      background-image:url(/images/background-1-5.png); } 
+      background-image:url(../images/background-1-5.png); } 
     .slider-item5{ 
-      background-image:url(/images/background-1-6.png); } 
+      background-image:url(../images/background-1-6.png); } 
       /*設置圖片的高度，請根據具體需要修改百分比，響應式及時修改此值*/ 
     .slider,.slider-item{ 
       padding-bottom: 100vh; }

@@ -99,15 +99,15 @@ ul,li{
       100%{ opacity:0; z-index:0; } } 
       /*設置背景，響應式請利用媒體查詢根據斷點修改路徑*/ 
     .slider-item1{ 
-      background-image:url(/images/eggs.jpg); } 
+      background-image:url(../images/eggs.jpg); } 
     .slider-item2{ 
-      background-image:url(/images/breakfast-1.jpeg); } 
+      background-image:url(../images/breakfast-1.jpeg); } 
     .slider-item3{ 
-      background-image:url(/images/breakfast-2.jpeg); } 
+      background-image:url(../images/breakfast-2.jpeg); } 
     .slider-item4{ 
-      background-image:url(/images/breakfast-3.jpeg); } 
+      background-image:url(../images/breakfast-3.jpeg); } 
     .slider-item5{ 
-      background-image:url(/images/breakfast-4.webp); } 
+      background-image:url(../images/breakfast-4.webp); } 
       /*設置圖片的高度，請根據具體需要修改百分比，響應式及時修改此值*/ 
     .slider,.slider-item{ 
       padding-bottom: 35%;

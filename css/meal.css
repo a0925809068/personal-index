@@ -90,15 +90,15 @@ ul,li{
       100%{ opacity:0; z-index:0; } } 
       /*設置背景，響應式請利用媒體查詢根據斷點修改路徑*/ 
     .slider-item1{ 
-      background-image:url(/images/meal-1.jpg); } 
+      background-image:url(../images/meal-1.jpg); } 
     .slider-item2{ 
-      background-image:url(/images/meal-2.jpg); } 
+      background-image:url(../images/meal-2.jpg); } 
     .slider-item3{ 
-      background-image:url(/images/meal-3.jpg); } 
+      background-image:url(../images/meal-3.jpg); } 
     .slider-item4{ 
-      background-image:url(/images/shrimp.jpg); } 
+      background-image:url(../images/shrimp.jpg); } 
     .slider-item5{ 
-      background-image:url(/images/20200410183936_51.jpg); } 
+      background-image:url(../images/20200410183936_51.jpg); } 
       /*設置圖片的高度，請根據具體需要修改百分比，響應式及時修改此值*/ 
     .slider,.slider-item{ 
       padding-bottom: 35%;
