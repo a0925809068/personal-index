@@ -16,7 +16,7 @@ div.background{
   background-image: url("../images/wood-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center left;
 }
 div.LOGO{
   text-align: center;
@@ -24,6 +24,12 @@ div.LOGO{
 }
 div.LOGO > a > img{
   width: 180px;
+  transition: all 1s;
+}
+@media (max-width: 499px){
+  div.LOGO > a > img{
+    width: 100px;
+  }
 }
 div.title{
   /* border: 1px solid black; */
@@ -43,6 +49,11 @@ div.title > span{
   font-size: 25px;
   text-shadow: 3px 3px 10px black;
 }
+@media (max-width: 499px){
+  div.title > span{
+    font-size: 22px;
+  }
+}
 div.contain{
   /* border: 1px solid white; */
   max-width: 1520px;
@@ -58,11 +69,26 @@ div.aside,div.main{
   background-color: gray;
   border-radius: 5px;
   margin-bottom: 30px;
-
+  transition: all 1s;
+}
+@media (max-width: 499px){
+  div.aside,div.main{
+    width: 270px;
+  }
 }
 div.aside > div.pic,div.main > div.pic{
   display: inline-block;
   vertical-align: top;
+  margin-top: 60px;
+  transition: all 1s;
+}
+@media (max-width: 499px){
+  div.aside > div.pic,div.main > div.pic{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 30%;
+  }
 }
 div.pic > img{
   width: 100px;
@@ -94,6 +120,11 @@ div.button_1,div.button_2{
   display: inline-block;
   width: 200px;
 }
+@media (max-width: 499px){
+  div.button_1,div.button_2{
+    margin: 10px;
+  }
+}
 div.button_1 > button,div.button_2 > button{
   padding: 3px 30px;
   font-size: 16px;
@@ -102,7 +133,14 @@ div.button_1 > button,div.button_2 > button{
   border-radius: 5px;
   border-color: gray;
 }
-@media (max-width: 767px){
+@media (max-width: 499px){
+  div.button_1 > button,div.button_2 > button{
+    width: 200px;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px){
   div.button_1 > button,div.button_2 > button{
     padding: 10px 30px;
     font-size: 20px;

@@ -20,11 +20,53 @@ div.background{
   /* height: 900px; */
 }
 div.LOGO{
-  text-align: center;
+  /* border: 1px solid black; */
   padding-top: 150px;
 }
-div.LOGO > a > img{
-  width: 180px;
+div.LOGO > div.rotate{
+  /* border: 1px solid black; */
+  width: 200px;
+  /* height: 200px; */
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  position: relative;
+  transition: all 1s;
+}
+@media (max-width: 499px){
+  div.LOGO > div.rotate{
+    width: 160px;
+    background-color: white;
+  }
+}
+div.border{
+  width: 190px;
+  height: 190px;
+  border: 5px solid #d9485c;
+  border-right-color: #bab10a;
+  border-bottom-color: #bab10a;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  top: -30px;
+  left: 1px;
+}
+@media (max-width: 499px){
+  div.border{
+    display: none;
+  }
+}
+div.rotate:hover div.border {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+div.contain > div.main > div.LOGO div.rotate > a > img{
+  width: 100%;
 }
 div.article{
   /* border: 1px solid red; */
@@ -90,7 +132,6 @@ div.info > div.info_detial > span,div.info_2 > div.info_detial_2 > ol{
 }
 div.contain{
   /* border: 1px solid blue; */
-  /* padding-top: 150px; */
   width: 90%;
   max-width: 1520px;
   margin: 0 auto;
@@ -123,6 +164,7 @@ div.main{
 @media (max-width: 767px){
   div.main{
     margin-top: 0;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px){
@@ -134,6 +176,7 @@ div.title{
   text-align: center;
   /* border: 1px solid black; */
 }
+
 div.title > h2{
   position: relative;
   z-index: 2;
@@ -154,7 +197,8 @@ div.title > div.title_1{
   }
 }
 div.title > span{
-  border-bottom: 2px solid #d9485c;
+  color: #d9485c;
+  /* border-bottom: 2px solid #d9485c; */
 }
 div.item{
   margin-top: 20px;
@@ -183,12 +227,13 @@ div.item > textarea{
 div.item > label{
   vertical-align: top;
   margin-right: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 div.button{
   display: flex;
   justify-content: center;
-  margin: 20px 60px;
+  margin: 20px 0;
   /* border: 1px solid red; */
 }
 div.button_1 > button{
@@ -204,7 +249,6 @@ div.button_1 > button{
 @media (max-width: 767px){
   div.button_1 > button{
     padding: 5px 40px;
-    font-size: 20px;
   }
 }
 div.button_1 > button:hover{
@@ -224,7 +268,6 @@ div.button_2 > button{
 @media (max-width: 767px){
   div.button_2 > button{
     padding: 5px 40px;
-    font-size: 20px;
   }
 }
 div.button_2 > button:hover{

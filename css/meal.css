@@ -203,19 +203,25 @@ div.word > span{
 }
 div.food_list_1{
   margin-top: 20px;
-  position: all 1s;
+}
+div.food_list_1,div.food_list_2,div.food_list_3,div.food_list_4{
+  /* border: 1px solid black; */
+  height: 380px;
+  transition: all 1s;
 }
 @media (max-width: 767px){
   div.food_list_1,div.food_list_2,div.food_list_3,div.food_list_4{
     /* border: 1px solid black; */
+    height: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 1399px){
   div.food_list_1,div.food_list_2,div.food_list_3,div.food_list_4{
     margin-top: 50px;
+    height: 430px;
     /* border: 1px solid black; */
   }
 }
@@ -270,10 +276,15 @@ div.food{
   border-radius: 50%;
   font-size: 0;
   width: 300px;
-  height: 300px;
+  height: 260px;
   overflow: hidden;
+  transition: all 1s;
+}
+div.food:hover{
+  height: 300px;
 }
 div.food > img{
+  width: 100%;
   transform: scale(1);
   transition-duration: 1s;
 }
@@ -305,6 +316,7 @@ div.food_list_2{
 div.food_list_2 > div.product_pic{
   position: relative;
   right:50px;
+  bottom: 10px;
   transition: all 1s;
 }
 @media (max-width: 767px){
@@ -315,12 +327,19 @@ div.food_list_2 > div.product_pic{
 }
 div.food_list_2 > div.product_pic > div.food{
   width: 400px;
-  height: 400px;
+  height: 360px;
   transition: all 1s;
+}
+div.food_list_2 > div.product_pic > div.food:hover{
+  height: 400px;
 }
 @media (max-width: 767px){
   div.food_list_2 > div.product_pic > div.food{
     width: 300px;
+    height: 260px;
+  }
+  div.food_list_2 > div.product_pic > div.food:hover{
+    height: 300px;
     height: 300px;
   }
 }
@@ -344,12 +363,18 @@ div.food_list_3 > div.product_pic{
 }
 div.food_list_3 > div.product_pic1 > div.food{
   width: 350px;
-  height: 350px;
+  height: 310px;
   transition: all 1s;
+}
+div.food_list_3 > div.product_pic1 > div.food:hover{
+  height: 350px;
 }
 @media (max-width: 767px){
   div.food_list_3 > div.product_pic1 > div.food{
     width: 300px;
+    height: 260px;
+  }
+  div.food_list_3 > div.product_pic1 > div.food:hover{
     height: 300px;
   }
 }

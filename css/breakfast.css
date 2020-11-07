@@ -269,6 +269,16 @@ div.food{
   border-top-right-radius: 10px;
   overflow: hidden;
 }
+@media (max-width: 767px){
+  div.food{
+    width: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food{
+    width: 250px;
+  }
+}
 div.food > img{
   width: 100%;
 }
@@ -301,6 +311,17 @@ div.food_name_detial{
   width: 100%;
   transform: translateY(100%);
   transition: transform 1s;
+}
+@media (max-width: 767px){
+  div.food_name_detial{
+    font-size: 14px;
+    height: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  div.food_name_detial{
+    font-size: 14px;
+  }
 }
 div.product_pic:hover div.food_name_detial{
   transform: translateY(0%);

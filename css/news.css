@@ -39,11 +39,52 @@ div.main{
 }
 div.contain > div.main > div.LOGO{
   /* border: 1px solid black; */
-  text-align: center;
   padding-top: 150px;
 }
-div.contain > div.main > div.LOGO > a > img{
+div.contain > div.main > div.LOGO > div.rotate{
+  /* border: 1px solid black; */
   width: 200px;
+  /* height: 200px; */
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  position: relative;
+  transition: all 1s;
+}
+@media (max-width: 499px){
+  div.contain > div.main > div.LOGO > div.rotate{
+    width: 160px;
+    background-color: white;
+  }
+}
+div.border{
+  width: 190px;
+  height: 190px;
+  border: 5px solid #d9485c;
+  border-right-color: #bab10a;
+  border-bottom-color: #bab10a;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  top: -30px;
+  left: 1px;
+}
+@media (max-width: 499px){
+  div.border{
+    display: none;
+  }
+}
+div.rotate:hover div.border {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+div.contain > div.main > div.LOGO div.rotate > a > img{
+  width: 100%;
 }
 div.video{
   /* border: 1px solid red; */
